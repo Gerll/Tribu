@@ -1,0 +1,76 @@
+html,body {
+    vertical-align: baseline;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+h3 {
+    color: #E9A003;
+    font-size: 36px;
+    font-weight: 700;
+}
+p, a, button, input {
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    font-size: 19px;
+    color: white;
+    box-shadow: 0px 0px 6px #00000040;
+    border-radius: 8px;
+    height: 59px;
+    border-color: transparent;
+}
+
+input{
+    height: 59px;
+    box-shadow: 0px 0px 6px #00000040;
+    font-size: 22px;
+    border-radius: 8px;
+    border-color: #00000040;
+}
+input::placeholder {
+    color: #A5A5A5;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+}
+
+/*Classes*/
+.login-left {
+    background-image: url("/assets/img/Enmascarar\ grupo\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.login-right {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 86px 168px 0px 86px;
+}
+
+/*Id's*/
+#btn-pass {
+    background-color: #E9A003;
+}
+
+#btn-facebook {
+    background-color: #0365E9;
+}
+
+#btn-google {
+    background-color: #FF5E00;
+}
