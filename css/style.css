@@ -82,9 +82,38 @@ h1 span {
     font-size: 45px;
 }
 
+h2 {
+    color: #636363;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 span {
+    color: #F16920;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 a {
     text-decoration: underline;
     color: seashell;
+}
+
+p {
+    color: #595959;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 li {
@@ -92,13 +121,12 @@ li {
     margin: 10px;
 }
 
-/*Classes*/
-.col img {
-    background-color: rgba(0,0,0,0.9);
-    opacity: 0.9;
-    height: 200px;
-    width: 300px;
+hr {
+    /*border: 0;*/
+    border-top: 1px solid #ADADAD;
+    width: 80%;
 }
+/*Classes*/
 
 .cards {
     display: flex;
@@ -115,14 +143,19 @@ li {
     align-items: center;
     width: 100%;
 }
-
+/*
+.row img {
+    height: 3.5rem;
+}
+*/
 .col {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     margin: 10px;
+    align-self: flex-end;
 }
 
 .login_btn {
@@ -136,6 +169,14 @@ li {
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #F16920;
+}
+
+.body_content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 .ftr_services {
@@ -153,6 +194,17 @@ li {
     border-top: 1px solid #FFF;
     padding: 28px 0px;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.verticalSpace{
+    margin: 4rem 0px;
+}
+
 /*ID's*/
 #logo {
     height: 50px;
@@ -189,4 +241,15 @@ li {
 
 #contact {
     min-height: 200px;
+}
+
+#bold_P {
+    color: #636363;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 16px;
 }
