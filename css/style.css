@@ -14,12 +14,12 @@ header {
     justify-content: space-between;
     width: -webkit-fill-available;
     flex-wrap: wrap;
-    position: sticky;
+    /*position: sticky;*/
     top: 0px;
     z-index: 2;
     height: 72px;
     padding: 38px 98px;
-    position: fixed;
+    position: absolute;
 }
 
 nav {
@@ -131,8 +131,21 @@ hr {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-grow: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    /*flex-grow: 3;*/
+    border-radius: 22px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 52px;
+    font-family: "Montserrat", sans-serif;
+    align-items: baseline;
+    width: 611px;
+    margin: 16px;
+}
+
+.cards p {
+    text-align: start;
 }
 
 .row {
@@ -179,9 +192,10 @@ hr {
     justify-content: center;
 }
 
-.ftr_services {
+.ftr_services a{
     color: #FFF;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -192,7 +206,7 @@ hr {
     width: -webkit-fill-available;
     justify-content: space-between;
     border-top: 1px solid #FFF;
-    padding: 28px 0px;
+    /*padding: 28px 0px;*/
 }
 
 .flex-container {
@@ -205,6 +219,22 @@ hr {
     margin: 4rem 0px;
 }
 
+.vr {
+    border-left: 2px solid white;
+    height: 30px;
+}
+
+.bannerContent {
+    width: -webkit-fill-available;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+    display: flex;
+}
 /*ID's*/
 #logo {
     height: 50px;
@@ -218,7 +248,6 @@ hr {
 }
 
 #locations {
-    background-image: url(../img/img-locations-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,6 +272,10 @@ hr {
     min-height: 200px;
 }
 
+#banner-1 {
+    background-image: url(../img/img2.png);
+}
+
 #bold_P {
     color: #636363;
     text-align: center;
@@ -252,4 +285,19 @@ hr {
     font-weight: 700;
     line-height: normal;
     margin-top: 16px;
+}
+
+#bold {
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#footer_txt{
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
